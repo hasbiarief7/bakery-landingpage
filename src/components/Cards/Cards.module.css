@@ -1,0 +1,26 @@
+.card {
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.cream {
+  background: var(--color-cream);
+}
+
+.pink {
+  background: var(--color-pink);
+}
+
+.blue {
+  background: var(--color-light-blue);
+}
+
+.yellow {
+  background: var(--color-yellow);
+}

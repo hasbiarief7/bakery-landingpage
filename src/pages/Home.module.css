@@ -1,0 +1,22 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 32px;
+  max-width: calc(1400px + 340px + 32px + 80px);
+  margin: 0 auto;
+  padding: 0 40px;
+  align-items: start;
+}
+
+.sections {
+  min-width: 0;
+}
+
+/* On tablet and below, revert to single column */
+@media (max-width: 992px) {
+  .layout {
+    grid-template-columns: 1fr;
+    padding: 0;
+    max-width: 100%;
+  }
+}

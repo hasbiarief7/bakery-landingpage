@@ -1,0 +1,95 @@
+/* === Color Palette === */
+:root {
+  --color-primary: #5B2D1E;
+  --color-secondary: #F7A63A;
+  --color-background: #FFF7F2;
+  --color-cream: #FDEBD8;
+  --color-pink: #FFA8A8;
+  --color-light-blue: #C9F0FF;
+  --color-yellow: #FFD76D;
+  --color-white: #FFFFFF;
+  --color-text: #2B2B2B;
+
+  /* Typography */
+  --font-heading: 'Baloo 2', 'Fredoka', cursive;
+  --font-body: 'Poppins', sans-serif;
+
+  /* Spacing */
+  --container-max-width: 1400px;
+  --gap: 32px;
+  --padding: 40px;
+}
+
+/* === Reset & Base === */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: var(--font-body);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--padding);
+}
+
+/* === Utility Classes === */
+.section-padding {
+  padding: 60px var(--padding);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --padding: 20px;
+    --gap: 20px;
+  }
+
+  .section-padding {
+    padding: 40px var(--padding);
+  }
+}

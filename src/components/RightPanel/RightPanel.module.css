@@ -1,0 +1,279 @@
+.panel {
+  width: 340px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 100px;
+  align-self: start;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-cream) transparent;
+}
+
+.panel::-webkit-scrollbar {
+  width: 4px;
+}
+
+.panel::-webkit-scrollbar-thumb {
+  background: var(--color-cream);
+  border-radius: 4px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Section Card */
+.section {
+  background: var(--color-white);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.section:hover {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.sectionText {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* Hero Mini */
+.heroMini {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.heroImage {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.heroImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroInfo {
+  flex: 1;
+}
+
+.heroTitle {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.heroRating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.starIcon {
+  color: var(--color-yellow);
+  font-size: 0.9rem;
+}
+
+.heroSince {
+  font-size: 0.75rem;
+  color: #999;
+  font-weight: 400;
+  padding-left: 6px;
+  border-left: 1px solid #e0e0e0;
+}
+
+/* Promo Mini */
+.promoMini {
+  text-align: center;
+}
+
+.promoBadge {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--color-secondary);
+  display: block;
+}
+
+.promoText {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 4px 0 12px;
+}
+
+.promoBtn {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+
+/* Learn More Link */
+.learnMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  transition: gap 0.3s ease;
+}
+
+.learnMore:hover {
+  gap: 10px;
+}
+
+/* Categories Mini */
+.categoriesGrid {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.categoryItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.categoryCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--color-cream);
+  transition: border-color 0.3s ease;
+}
+
+.categoryItem:hover .categoryCircle {
+  border-color: var(--color-secondary);
+}
+
+.categoryCircle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.categoryName {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: center;
+}
+
+/* Menu Mini */
+.menuList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menuLink {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text);
+  padding: 6px 0;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.menuLink:last-child {
+  border-bottom: none;
+}
+
+.menuLink:hover {
+  color: var(--color-secondary);
+}
+
+/* Testimonials Mini */
+.testimonialCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.testimonialStars {
+  display: flex;
+  gap: 2px;
+}
+
+.testimonialText {
+  font-size: 0.82rem;
+  color: #555;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.testimonialAuthor {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* Social / Footer Mini */
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.socialIcons a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-cream);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.socialIcons a:hover {
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.contactText {
+  font-size: 0.8rem;
+  color: #888;
+  line-height: 1.5;
+}
+
+/* Hide on tablet and mobile */
+@media (max-width: 992px) {
+  .panel {
+    display: none;
+  }
+}
